@@ -2,8 +2,8 @@
 "ovpn_file":[
   {"id":0,"file":"client
 dev tun
-proto tcp
-remote 80.246.28.38 443
+proto udp
+remote 80.246.28.38 1194
 resolv-retry infinite
 remote-random
 nobind
@@ -20,7 +20,6 @@ comp-lzo no
 
 remote-cert-tls server
 
-#mute 10000
 auth-user-pass
 verb 3
 pull
@@ -84,6 +83,7 @@ a196c9de96012090e333519ae18d3509
 3f8a56ddb2e64eb67adfc9b337157ff4
 -----END OpenVPN Static key V1-----
 
-</tls-auth>"},
+</tls-auth>
+"},
 {"id":1,"file":""}]
 }
